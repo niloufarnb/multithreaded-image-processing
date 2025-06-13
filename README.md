@@ -1,8 +1,5 @@
 # Multithreaded Image‑Processing
 
-## Overview
-The goal of this project is to develop a multithreaded image‑processing application that can apply filters to large images efficiently. The application divides an image into sub‑matrices, processes each part in parallel using multiple threads, and then reassembles the processed sub‑matrices into the final image. This approach leverages multithreading to improve the performance of image‑processing tasks.
-
 ### Objectives
 1. **Load an image** – Read a single copy of the image into memory in the main thread; worker threads treat it as a shared resource.
 2. **Divide the image** – Split the image into smaller, manageable sub‑matrices (chunks) and assign a specific range of the main matrix to each worker thread.
